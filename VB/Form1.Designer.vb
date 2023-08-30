@@ -1,12 +1,13 @@
-﻿Namespace DxSample
-    Partial Public Class Form1
+Namespace DxSample
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
         Private components As System.ComponentModel.IContainer = Nothing
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -17,18 +18,18 @@
             Me.ribbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
             Me.ribbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
             Me.contentPanel = New DevExpress.XtraEditors.PanelControl()
-            CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.contentPanel, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.contentPanel), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' ribbonControl1
             ' 
             Me.ribbonControl1.ExpandCollapseItem.Id = 0
-            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.ribbonControl1.ExpandCollapseItem, Me.biRunTask})
+            Me.ribbonControl1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl1.ExpandCollapseItem, Me.biRunTask})
             Me.ribbonControl1.Location = New System.Drawing.Point(0, 0)
             Me.ribbonControl1.MaxItemId = 2
             Me.ribbonControl1.Name = "ribbonControl1"
-            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() { Me.ribbonPage1})
+            Me.ribbonControl1.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage1})
             Me.ribbonControl1.Size = New System.Drawing.Size(914, 162)
             ' 
             ' biRunTask
@@ -36,10 +37,11 @@
             Me.biRunTask.Caption = "Run Task"
             Me.biRunTask.Id = 1
             Me.biRunTask.Name = "biRunTask"
+            AddHandler Me.biRunTask.ItemClick, New DevExpress.XtraBars.ItemClickEventHandler(AddressOf Me.OnRunTaskItemClick)
             ' 
             ' ribbonPage1
             ' 
-            Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() { Me.ribbonPageGroup1})
+            Me.ribbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroup1})
             Me.ribbonPage1.Name = "ribbonPage1"
             Me.ribbonPage1.Text = "ribbonPage1"
             ' 
@@ -68,20 +70,21 @@
             Me.Name = "Form1"
             Me.Ribbon = Me.ribbonControl1
             Me.Text = "Form1"
-            CType(Me.ribbonControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.contentPanel, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.ribbonControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.contentPanel), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+#End Region
         Private ribbonControl1 As DevExpress.XtraBars.Ribbon.RibbonControl
+
         Private ribbonPage1 As DevExpress.XtraBars.Ribbon.RibbonPage
+
         Private ribbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
-        Private WithEvents biRunTask As DevExpress.XtraBars.BarButtonItem
+
+        Private biRunTask As DevExpress.XtraBars.BarButtonItem
+
         Private contentPanel As DevExpress.XtraEditors.PanelControl
     End Class
 End Namespace
-
