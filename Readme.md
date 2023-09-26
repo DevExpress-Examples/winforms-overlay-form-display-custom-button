@@ -13,8 +13,8 @@ An Overlay Form is a semi-transparent splash screen that runs in a background th
 
 This example shows how to display:
 
-* a percentage label below the wait indicator;
-* a custom button that terminates the processed task and closes the Overlay Form.
+* A percentage label below the wait indicator.
+* A custom button that terminates the processed task and closes the Overlay Form.
 
 ![Custom Overlay Form](HelpResources/Custom.png)
 
@@ -28,11 +28,11 @@ You can change the label text, button glyph, and the action performed on a click
 
 In this example, there are `OverlayImagePainter` and `OverlayTextPainter` objects. Both objects derive from the `OverlayWindowPainterBase` class and implement the drawing logic for the image and text, respectively. You can use their APIs to customize the image and text.
 
-The `OverlayImagePainter` object draws a custom image at the center-top of the Overlay Form and handles clicks on the image. You can specify the following properties:
+The `OverlayImagePainter` object draws a custom image at the top-center of the Overlay Form and handles clicks on the image. You can specify the following properties:
 
-* `Image` - the image in the normal state;
-* `HoverImage` - the image in the hovered state;
-* `ClickAction` - an action performed with a click on the image;
+* `Image` - the image in the normal state.
+* `HoverImage` - the image in the hovered state.
+* `ClickAction` - an action performed by a click on the image.
 
 The `OverlayTextPainter` object draws a custom label below the wait indicator. You can specify the following properties:
 
@@ -42,4 +42,4 @@ The `OverlayTextPainter` object draws a custom label below the wait indicator. Y
 
 The `OverlayWindowCompositePainter` object composes the drawing logic in the `OverlayImagePainter` and `OverlayTextPainter` objects and is passed to the `SplashScreenManager.ShowOverlayForm` method.
 
-The actual operation performed while the Overlay Form is shown is implemented using the cancellable task available the .NET Framework Class Labrary (Task Parallel Library (TPL)).
+The actual operation performed while the Overlay Form is shown is implemented using the cancellable task available with the .NET Framework Class Library (Task Parallel Library (TPL)).
