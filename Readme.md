@@ -45,7 +45,7 @@ The `OverlayWindowCompositePainter` object composes the drawing logic in the `Ov
 
 The actual operation performed while the Overlay Form is shown is implemented using the cancellable task available with the .NET Framework Class Library (Task Parallel Library (TPL)).
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-overlay-form-display-custom-button&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-overlay-form-display-custom-button&~~~was_helpful=no)
 
